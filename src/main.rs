@@ -14,10 +14,9 @@ fn main() {
 
 // フィボナッチ数列の第n項目を求めるプログラム
 fn fibonacci(n: u32) -> u32 {
-    let answer = if n == 1 || n == 2 {
+    if n == 1 || n == 2 {
         1
     } else {
         fibonacci(n-1) + fibonacci(n-2)
-    };
-    answer
+    }
 }
